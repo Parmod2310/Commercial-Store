@@ -159,7 +159,6 @@ plt.show()  # Attempt to display (works if GUI is available)
 ---
 
 ## References
-- Sales Data Source *(Update with actual source if available)*
 - [Pandas Documentation](https://pandas.pydata.org/docs/)
 - [Seaborn Documentation](https://seaborn.pydata.org/)
 
