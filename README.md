@@ -113,7 +113,7 @@ The dataset is stored in `Sales Data.csv`.
 ## Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Parmod2310/Commercial-Store-.git
+   git clone https://github.com/Parmod2310/Commercial-Store.git
 cd Commercial-Store-
    ```
 2. Install dependencies:
@@ -144,25 +144,16 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Ensure this line is present if using Jupyter Notebook
-%matplotlib inline  # Uncomment this line in a Jupyter environment
-
-# Load the dataset
 sales = pd.read_csv("Sales Data.csv")
-
-# Create the violin plot
 plt.figure(figsize=(10, 6))
 sns.violinplot(x='City', y='Sales', data=sales, palette='Set3')
 plt.title('Revenue Distribution by City')
 plt.xlabel('City')
 plt.ylabel('Revenue')
 plt.xticks(rotation=45)
-
-# Display the plot
-plt.show()
-
-# Optional: Save the plot if you can't see it
-plt.savefig('revenue_by_city.png')  # Saves to a file if display fails
+plt.savefig('revenue_by_city.png')  # Save to file
+print("Plot saved as 'revenue_by_city.png'")
+plt.show()  # Attempt to display (works if GUI is available)
 ```
 
 ---
